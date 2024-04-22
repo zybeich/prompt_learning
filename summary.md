@@ -61,8 +61,18 @@ V-L models: CLIP, ALIGN, LiT, FILIP, and Florence. Focus on zero-shot and few-sh
 [C-TPT](https://openreview.net/pdf?id=jzzEHTBFOT): minimize Average Text Feature Dispersion + TPT loss (variance) to improve ECE. 
 
 
+# Related to Diffusion Models
+[GDA: Generalized Diffusion for Robust Test-time Adaptation](https://arxiv.org/pdf/2404.00095.pdf): OOD classification, the gradient of (marginal entropy + style loss (CLIP) + content loss (UNet)) will be used in the denoise process.
+
+
+
+# Related to Optimal Transport
+[Otter](https://arxiv.org/pdf/2404.08461.pdf): (Optimal Transport Adapter) focuses on label shift and requires the estimate of the label distribution to improve the zero-shot classification.
+
+
+
 # Possible research questions
 1. Adversarial universal prompt token tuning. $\gamma^* = \min_\gamma  \mathbb{E} \max_{\|x-x'\|<\delta}\ell(x; \gamma) $.
 2. DRO with prompt learning. $\gamma^* = \min_\gamma \sup_{\|P-P'\|<\delta}\mathbb{E}_P' \ell(x; \gamma)$ in representation space could be used as a transferability metric. Or in token space?
-3. Pure visual prompt at test time. Intralabel/Marginal+Interlabel, target data selection with entropy, $lambda$ selection with entropy, corrupted data.
+3. Pure visual prompt at test time. Intralabel/Marginal+Interlabel, target data selection with entropy, $lambda$ selection with entropy, corrupted data, learning the prompt from sub-class (base to new setting).
 4. V-L. V: marginal distance + separability (can be used for any downstream task), L: entropy. 
