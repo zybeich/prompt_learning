@@ -24,7 +24,7 @@ V-L models: CLIP, ALIGN, LiT, FILIP, and Florence. Focus on zero-shot and few-sh
 
 [AutoVP](https://arxiv.org/abs/2310.08381): an end-to-end prompt learning framework including visual prompt and label mapping. It adds prompts to images directly and mainly focuses on CNNs.
 
-[[DoPrompt](https://arxiv.org/abs/2208.08914): learns visual prompts for each source domain and a prompt adapter during training time. Target representations are fed into the prompt adapter, which then determines the weights used to compute the appropriate prompt for each target input. (**a DG method**)
+[DoPrompt](https://arxiv.org/abs/2208.08914): learns visual prompts for each source domain and a prompt adapter during training time. Target representations are fed into the prompt adapter, which then determines the weights used to compute the appropriate prompt for each target input. (**a DG method**)
 
 
 ## At test time (beyond supervision)
@@ -54,7 +54,7 @@ V-L models: CLIP, ALIGN, LiT, FILIP, and Florence. Focus on zero-shot and few-sh
 
 ### Privacy
 [Exploring the Benefits of Visual Prompting in Differential Privacy](https://openaccess.thecvf.com/content/ICCV2023/papers/Li_Exploring_the_Benefits_of_Visual_Prompting_in_Differential_Privacy_ICCV_2023_paper.pdf)
-
+[Quantifying Privacy Risks of Prompts in Visual Prompt Learning](https://www.usenix.org/system/files/sec24summer-prepub-176-wu-yixin.pdf)
 
 ### Uncertainty
 [Neural Clamping: Joint Input Perturbation and Temperature Scaling for Neural Network Calibration](https://arxiv.org/abs/2209.11604)
